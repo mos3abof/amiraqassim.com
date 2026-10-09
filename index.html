@@ -1,22 +1,86 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <title>Amira Qassim</title>
   <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
-  <meta name="Viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Amira Qassim · أميرة قاسم</title>
+  <meta name="description" content="Amira Qassim — personal website. أميرة قاسم — الموقع الشخصي." />
+  <link rel="canonical" href="https://amiraqassim.com/" />
+  <meta name="theme-color" content="#17131c" />
+
+  <!-- Social sharing previews -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_GB" />
+  <meta property="og:locale:alternate" content="ar_AR" />
+  <meta property="og:title" content="Amira Qassim · أميرة قاسم" />
+  <meta property="og:description" content="Personal website of Amira Qassim. الموقع الشخصي لأميرة قاسم." />
+  <meta property="og:url" content="https://amiraqassim.com/" />
+  <meta property="og:image" content="https://amiraqassim.com/assets/og-image.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Inter:wght@400;500&family=Amiri:wght@700&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap" />
   <link rel="stylesheet" href="style.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Amira Qassim",
+    "alternateName": "أميرة قاسم",
+    "url": "https://amiraqassim.com/",
+    "image": "https://amiraqassim.com/assets/amira-wide.jpg",
+    "sameAs": ["https://www.linkedin.com/in/amira-qassim-177abb15/"]
+  }
+  </script>
 </head>
-<div class="bgimg">
-  <div class="topleft">
-    <p>Amira Qassim</p>
-  </div>
-  <div class="middle">
-    <h1>COMING SOME DAY!</h1>
-  </div>
-  <div class="bottomleft">
-    <p>(c) 2025</p>
-  </div>
-</div>
+
+<body>
+  <main class="page">
+    <picture class="backdrop">
+      <source media="(max-aspect-ratio: 3/4)" srcset="assets/amira-900.jpg 495w, assets/amira.jpg 881w" sizes="100vw" />
+      <img src="assets/amira-wide.jpg" srcset="assets/amira-wide-1200.jpg 1200w, assets/amira-wide.jpg 1800w"
+        sizes="100vw" width="1800" height="1800"
+        alt="Amira Qassim smiling, seated by a lake on a sunny day" />
+    </picture>
+
+    <div class="stack">
+      <section class="card" lang="ar" dir="rtl">
+        <h1>أميرة قاسم</h1>
+        <p class="lede">موقعي الجديد قادم قريبًا.<br />حتى ذلك الحين، تجدونني على لينكدإن.</p>
+      </section>
+
+      <section class="card" lang="en">
+        <h1>Amira Qassim</h1>
+        <p class="lede">My new website is coming soon.<br />Until then, find me on LinkedIn.</p>
+      </section>
+
+      <a class="linkedin" href="https://www.linkedin.com/in/amira-qassim-177abb15/" target="_blank"
+        rel="noopener noreferrer" aria-label="Amira Qassim on LinkedIn · أميرة قاسم على لينكدإن"
+        title="LinkedIn">
+        <svg aria-hidden="true" viewBox="0 0 24 24" width="26" height="26">
+          <path fill="currentColor"
+            d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.95v5.66H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z" />
+        </svg>
+      </a>
+    </div>
+
+    <footer class="footer">
+      <p lang="ar" dir="rtl">&copy; <span class="year">2026</span> أميرة قاسم</p>
+      <p lang="en">&copy; <span class="year">2026</span> Amira Qassim</p>
+    </footer>
+  </main>
+
+  <script>
+    var year = new Date().getFullYear();
+    document.querySelectorAll(".year").forEach(function (el) { el.textContent = year; });
+  </script>
+</body>
 
 </html>
